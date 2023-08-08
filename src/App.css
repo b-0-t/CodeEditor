@@ -1,0 +1,13 @@
+.CodeMirror{
+  height: 340px !important;
+  color: #fff;
+}
+
+.CodeMirror-gutters{
+  background: #1d1e22 !important;
+}
+
+/* Adding css to scroll pages */
+.CodeMirror-scroll{
+  background: #1d1e22 ;
+}

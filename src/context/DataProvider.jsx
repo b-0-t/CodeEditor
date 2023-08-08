@@ -1,0 +1,18 @@
+import { createContext , useState } from "react";
+
+export const DataContext = createContext();
+const DataProvider = ({children}) => {
+    const [ html , setHtml ] = useState('');
+    const [ css , setCss ] = useState('');
+    const [ js , setJs ] = useState('');
+    return(
+        <DataContext.Provider value={{
+            // Entering the values to be passed i.e. by this we provide the values
+            html,setHtml,css,setCss,js,setJs
+        }}>
+        {children}
+        </DataContext.Provider>
+    )
+}
+
+export default DataProvider;
